@@ -112,8 +112,7 @@ Here is my initial code for the loop.
 
 And here it is running. It doesn’t ever state how to “end” to the user.
 (image here)
-![error in code(./images/IMG_7723.jpeg)
-IMG_7723.jpeg
+![Alt text](https://github.com/Anthonymiranda/Python-Time-Keeping-Project/raw/main/IMG_7722.jpeg)
 
 This was a quick fix for line 20 of the code to change the string from “"What activity are you doing? (gaming/workout/study/commute/sleep) " 
 to
