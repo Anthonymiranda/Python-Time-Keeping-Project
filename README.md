@@ -120,7 +120,7 @@ to
 "What are you doing? (gaming/study/workout/commute/sleep) or type done to finish: "
 
 This gave me the following output when ran:
-(image here)
+![error fixed](https://github.com/Anthonymiranda/Python-Time-Keeping-Project/raw/main/IMG_7723.jpeg)
 
 This fixes the issue of letting the end user know how to finish but after feedback from my wife, it doesn’t tell you how long you spent on the activities after you mark “done” to stop tracking and activity. It simply asks you what activity you want to track next.
 
