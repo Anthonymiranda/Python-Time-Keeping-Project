@@ -15,7 +15,7 @@
 
 <h2>Utilities Used</h2>
 
-- <bReplit</b> 
+- <b>Replit</b> 
 <h2>PART 1: Defining Your Problem</h2>
 
 <p>I am interested in productivity and being productive. While I have made systems, habits, and routines in my life to help me be productive, my wife usually struggles. I want to create a program that helps with tracking the time we use on different activities and gives us recorded outputs that we can use to optimize our life.</p>
