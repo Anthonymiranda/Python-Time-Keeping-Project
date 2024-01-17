@@ -2,7 +2,7 @@ ppl<h1>Python Task Time Keeping School Program</h1>
 
 
 <h2>Description</h2>
-<b>The python code on this repository was for my first full python project. It was a task time keeping program. Since there are apps that actually do this, I never fully finish the program or updated it. This project was to showcase my python learning with something I was concerned at the time - time management and productivity optimization.
+<b>The python code on this repository was for my first full python project. It was a task time keeping program. Since there are apps that actually do this, I never fully finished the program or updated it. This project was to showcase my python learning with something I was concerned at the time - time management and productivity optimization.
 </b>
 <br />
 <br />
