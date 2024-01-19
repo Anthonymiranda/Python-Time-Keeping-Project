@@ -1,4 +1,4 @@
-ppl<h1>Python Task Time Keeping School Program</h1>
+<h1>Python Task Time Keeping School Program</h1>
 
 
 <h2>Description</h2>
@@ -24,7 +24,7 @@ ppl<h1>Python Task Time Keeping School Program</h1>
 
 <h2>PART 2: Working Through Specific Examples</h2>
 
-Example scenario 1:<br>
+**Example scenario 1:**<br>
 The user opens the program and is prompted to input their current activity.<br>
 The user types in "gaming" and hits enter.<br>
 The program starts a timer for gaming and displays a message saying "Timer started."<br>
@@ -37,7 +37,7 @@ The user spends 1 hour studying and types in "done" to stop the timer.<br>
 The program calculates the time spent studying as 1 hour and displays a message saying "Study time logged: 1.00 hours".<br>
 The program prompts the user to input their next activity, and the process continues until the user is finished for the day.<br>
 <br>
-Example scenario 2:<br>
+**Example scenario 2:**<br>
 The user opens the program and is prompted to input their current activity.<br>
 The user types in "sleep" and hits enter.<br>
 The program starts a timer for sleeping and displays a message saying "Timer started."<br>
@@ -46,7 +46,7 @@ The user types in "done" to stop the timer.<br>
 The program calculates the time spent sleeping as 8 hours and displays a message saying "Sleep time logged: 8.00 hours".<br>
 The program prompts the user to input their next activity for the day.<br>
 <br>
-Example scenario 3:<br>
+**Example scenario 3:**<br>
 The user opens the program and is prompted to input their current activity.<br>
 The user types in "workout" and hits enter.<br>
 The program starts a timer for working out and displays a message saying "Timer started."<br>
