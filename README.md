@@ -4,10 +4,12 @@
 <h2>Description</h2>
 <b>The python code on this repository was for my first full python project. It was a task time keeping program. Since there are apps that actually do this, I never fully finished the program or updated it. This project was to showcase my python learning with something I was concerned at the time - time management and productivity optimization.
 </b>
-<br />
-<br />
+<br>
+<br>
+The program can be found here: 
 
-<br />
+ - [Task Keeping Code](https://github.com/Anthonymiranda/Python-Time-Keeping-Project/blob/main/Task%20Time%20Keeping%20Program)
+
 
 <h2>Languages Used</h2>
 
