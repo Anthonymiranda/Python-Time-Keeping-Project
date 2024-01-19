@@ -1,0 +1,56 @@
+import datetime
+from openpyxl import Workbook, load_workbook
+
+# Set up spreadsheet and sheet
+FILENAME = 'activity_log.xlsx'
+try:
+    wb = load_workbook(FILENAME)
+except FileNotFoundError:
+    wb = Workbook()
+    wb.remove(wb.active)
+ws = wb.create_sheet('Activity Log')
+ws.append(['Date', 'Gaming', 'Workout', 'Study', 'Commute', 'Sleep', 'Idle'])
+
+# Initialize variables
+activity_dict = {'gaming': 0, 'workout': 0, 'study': 0, 'commute': 0, 'sleep': 0, 'gaming': 0}
+start_time = None
+end_tracking = False
+
+# Loop to track activities
+while not end_tracking:
+    if start_time is None:
+        activity = input("What are you doing? (gaming/workout/study/commute/sleep/work) (Type 'end' to finish tracking and get your output for the day): ")
+        if activity.lower() not in activity_dict:
+            print("Invalid activity. Please try again.")
+            continue
+        start_time = datetime.datetime.now()
+        print("Timer started. Type 'done' if done tracking this activity or type 'end' to finish tracking for the day: ")
+    else:
+        done = input()
+        while done.lower() not in ['done', 'end']:
+            print("Invalid input. Please try again: ")
+            done = input()
+        if done.lower() == 'done':
+            end_time = datetime.datetime.now()
+            time_duration = (end_time - start_time).total_seconds() / 3600.0
+            activity_dict[activity.lower()] += time_duration
+            start_time = None
+            print(f"{activity} time logged: {time_duration:.2f} hours")
+        elif done.lower() == 'end':
+            end_tracking = True
+
+# Calculate total time and percentage for each activity
+total_time = sum(activity_dict.values())
+activity_percentages = {activity: time / total_time for activity, time in activity_dict.items()}
+idle_time = 24 - total_time
+
+# Write data to spreadsheet
+date = datetime.date.today()
+ws.append([date, activity_dict['gaming'], activity_dict['workout'], activity_dict['study'], activity_dict['commute'], activity_dict['sleep'], idle_time])
+wb.save(FILENAME)
+
+# Print summary for user
+print(f"Activity log for {date}:")
+for activity, time in activity_dict.items():
+    print(f"{activity.capitalize()}: {time:.2f} hours ({activity_percentages[activity] * 100:.2f}%)")
+print(f"Idle time: {idle_time:.2f} hours")
